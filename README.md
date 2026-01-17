@@ -1,112 +1,144 @@
 <div align="center">
 
-<img src="https://via.placeholder.com/900x220/0f172a/ffffff?text=SnortSheet" width="100%" alt="SnortSheet Banner"/>
+<img src="https://via.placeholder.com/1200x260/f8fafc/111827?text=SnortSheet" width="100%" alt="SnortSheet"/>
 
-# 🛡️ SnortSheet  
-### A Serverless SIEM & Agentic SOC Framework
+<h1>SnortSheet</h1>
 
-**Snort → Python Middleware → Google Sheets → AI / Automation**
+<p>
+A Serverless SIEM & Agentic SOC Framework<br/>
+Snort → Python Middleware → Google Sheets → AI Automation
+</p>
 
 </div>
 
 ---
 
-## ⚠️ LICENSE NOTICE (READ FIRST)
+## License Status
 
-**This project is NOT open source.**
-
-All rights are reserved by the author.  
-You are **NOT permitted** to use, copy, modify, distribute, or deploy this software **without explicit written permission** from the author.
-
-Viewing the source code does **not** grant usage rights.
-
-See the [`LICENSE`](./LICENSE) file for full legal terms.
-
----
-
-## 🧐 About SnortSheet
-
-SnortSheet is a **proprietary security middleware framework** that bridges **Snort IDS** with **cloud-native workflows** using Google Sheets as a real-time SOC dashboard.
-
-It eliminates the need for:
-- ELK Stack
-- Splunk
-- Databases
-- Dedicated SOC servers
-
-Instead, it provides:
-- Real-time alert ingestion
-- Intelligent alert throttling
-- Cloud-hosted visualization
-- AI / Agentic SOC readiness
-
-This project is designed for **research, controlled deployments, and commercial evolution**, not unrestricted public reuse.
+<table>
+<tr>
+<td width="8%" align="center">🔒</td>
+<td>
+<strong>Proprietary Software</strong><br/>
+This project is <strong>not open source</strong>. All rights are reserved by the author.
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎯 Problem Statement
+## Usage Permissions
 
-Traditional IDS monitoring fails small teams because:
-
-- Logs are locked inside servers
-- Visualization requires heavy infrastructure
-- SIEMs are expensive and complex
-- Alert noise overwhelms analysts
-
-SnortSheet solves this by **moving intelligence, not infrastructure**.
+<table>
+<thead>
+<tr>
+<th align="left">Action</th>
+<th align="center">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View source code</td>
+<td align="center">✅ Allowed</td>
+</tr>
+<tr>
+<td>Copy or reuse code</td>
+<td align="center">❌ Not allowed</td>
+</tr>
+<tr>
+<td>Modify or fork</td>
+<td align="center">❌ Not allowed</td>
+</tr>
+<tr>
+<td>Commercial or non-commercial use</td>
+<td align="center">❌ Not allowed</td>
+</tr>
+<tr>
+<td>Reverse engineering</td>
+<td align="center">❌ Not allowed</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
-## 💡 Core Capabilities
+## About SnortSheet
 
-- **Snort CSV ingestion**
-- **Python-based smart deduplication**
-- **Rate-limited alert forwarding**
-- **Google Sheets as live SOC**
-- **HTML email alerting**
-- **Agentic AI compatibility (n8n, LLMs)**
+SnortSheet is a **proprietary security middleware** designed to bridge  
+**Snort IDS** with **cloud-native monitoring and automation workflows**.
+
+Instead of relying on heavy infrastructure such as ELK or commercial SIEMs,
+SnortSheet uses **Google Sheets as a lightweight SOC dashboard**, enabling:
+
+- real-time visibility  
+- low operational overhead  
+- rapid alert access  
+- AI-ready data pipelines  
+
+This project focuses on **practical security engineering**, not vendor lock-in.
 
 ---
 
-## 🧠 Architecture Overview
+## Core Capabilities
 
-[ Attacker ]
-│
-▼
-[ Snort IDS ]
-│
-▼
+<table>
+<tr>
+<td width="50%">
+
+- Snort CSV alert ingestion  
+- Intelligent deduplication  
+- Rate-limited forwarding  
+- HTML email alerts  
+
+</td>
+<td width="50%">
+
+- Google Sheets SOC dashboard  
+- Cloud-native visibility  
+- Agentic AI compatibility  
+- Automation-ready structure  
+
+</td>
+</tr>
+</table>
+
+---
+
+## Architecture Overview
+
+Attacker
+↓
+Snort IDS
+↓
 alert.csv
-│
-▼
-[ SnortSheet Python Bridge ]
-│ (deduplication + throttling)
-▼
-[ Google Apps Script Webhook ]
-│
-├──► Google Sheets (SOC Dashboard)
-└──► Email Alerts
+↓
+Python Bridge
+(deduplication & throttling)
+↓
+Google Apps Script
+↓
+Google Sheets (SOC) + Email Alerts
 
 
 ---
 
-## 🔒 Security Design Principles
+## Security Design Principles
 
-- One-way outbound data flow only
-- No inbound firewall ports
-- HTTPS (TLS-encrypted transport)
-- No Google credentials stored locally
-- Webhook-based backend isolation
-- Strict payload validation
+- One-way outbound data flow only  
+- No inbound ports required  
+- TLS-encrypted transport  
+- No Google credentials stored locally  
+- Webhook-based backend isolation  
+- Strict payload validation  
 
-The sensor node remains isolated and hardened.
+The sensor node remains isolated and hardened by design.
 
 ---
 
-## 🛠️ Repository Structure
+## Repository Structure
 
 snortsheet/
-├── snort_bridge.py # Python middleware (core logic)
+├── snort_bridge.py # Core proprietary middleware
 ├── code.gs # Google Apps Script backend
 ├── requirements.txt # Python dependencies
 ├── README.md # Documentation
@@ -115,73 +147,47 @@ snortsheet/
 
 ---
 
-## 🚧 Access & Usage
+## Licensing & Permissions
 
-This repository is published for:
-- Technical review
-- Architecture evaluation
-- Controlled demonstrations
+Any use of this software **requires explicit written permission**.
 
-### ❌ You MAY NOT:
-- Deploy this in production
-- Redistribute the code
-- Fork or repackage
-- Sell or monetize
-- Use in academic or commercial products
+For licensing, research access, or commercial discussions:
 
-### ✅ You MAY:
-- Read the code
-- Request permission for use
+**Email:** dev.sahilthakur@gmail.com  
+
+Unauthorized usage constitutes **copyright infringement**.
 
 ---
 
-## 📬 Permission & Commercial Licensing
-
-For:
-- Commercial usage
-- Research deployments
-- Educational workshops
-- Custom integrations
-- Licensing discussions
-
-Contact the author directly.
-
-Unauthorized usage will be treated as **copyright infringement**.
-
----
-
-## 🗺️ Roadmap (Author-Controlled)
-
-- Dockerized deployment
-- Secure webhook authentication
-- Multi-sensor aggregation
-- Slack / Discord alerting
-- GeoIP intelligence enrichment
-- Autonomous response agents
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Sahil Thakur**  
-(Security Researcher & Developer)  
+Security Researcher & Developer  
 
-Project Codename: **SnortSheet**
-
-Mission:  
-> Build lean, intelligent security systems without enterprise bloat.
+Focus:  
+Building lean, intelligent security systems without enterprise bloat.
 
 ---
 
-## 📄 License
+## License (Full Text)
 
-© 2026 Sahil Thakur  
-**All Rights Reserved**
+<details>
+<summary>Click to expand license</summary>
 
-See the `LICENSE` file for full terms.
+Copyright (c) 2026 Sahil Thakur.
+All Rights Reserved.
+
+This software and the associated source code are proprietary.
+No copying, modification, distribution, reverse engineering,
+or use is permitted without explicit written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+
+
+</details>
 
 ---
 
 <div align="center">
-<sub><i>Security is a process — not a dashboard.</i></sub>
+<sub>Security is a process — not a product.</sub>
 </div>
