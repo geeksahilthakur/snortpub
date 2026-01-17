@@ -3,7 +3,7 @@
 <!-- =============================== -->
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/geeksahil/snortsheet/main/assets/snortsheet-logo.png](https://media.canva.com/v2/image-resize/format:JPG/height:308/quality:92/uri:ifs%3A%2F%2FM%2F6a3a712e-554c-45f1-bea0-f820f5859f99/watermark:F/width:550?csig=AAAAAAAAAAAAAAAAAAAAAIpxky3JnlHq78Q6kh8PqIxseGfjg8Jx23_1oOskGshG&exp=1768657634&osig=AAAAAAAAAAAAAAAAAAAAAMTRPUEkAyHJwL_BBGKzl2UVW8evMF4pjuydsTXowwLC&signer=media-rpc&x-canva-quality=thumbnail_large)](https://github.com/geeksahilthakur/snortsheet/blob/main/logosnortsheet.jpg?raw=true)" width="200" alt="SnortSheet Logo">
+  <img src="https://raw.githubusercontent.com/geeksahilthakur/snortsheet/refs/heads/main/logosnortsheet.jpg" width="200" alt="SnortSheet Logo">
 </p>
 
 <h1 align="center">🛡️ SnortSheet</h1>
